@@ -10,7 +10,7 @@
 |------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
 |                        | outliers                                                     |                                                                                                                                                                     |
-|                        | relations of                                                 |                                                                                                                                                                     | 
+|                        | relations of[^1]                                             |                                                                                                                                                                     | 
 |                        | encoding & binning                                           |                                                                                                                                                                     | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization vs Standardization                                                                                                                                    |
 |                        | Feature Selection                                            |                                                                                                                                                                     |
@@ -30,6 +30,7 @@
 
 ### tables
 
+[^1]: kk
 - relations of
 ```
                         categorical         |  continuous
