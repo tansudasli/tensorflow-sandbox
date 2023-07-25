@@ -1,14 +1,15 @@
 # tensorflow-sandbox
 
-- ....
+
 
 
 ## general structure of ML pipeline
 
+
 |                        | **Steps**                                                    |                                                                                                                                                                     |
 |------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
-|                        | outliers                                                     | 
+|                        | outliers                                                     |                                                                                                                                                                     |
 |                        | relations of                                                 |                                                                                                                                                                     | 
 |                        | encoding & binning                                           |                                                                                                                                                                     | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization vs Standardization                                                                                                                                    |
@@ -27,7 +28,11 @@
 |                        |                                                              | purpose <br/>&nbsp; - for another model (check the improvement) <br/>&nbsp; - for itself (ground truth labeling)                                                    |
 
 
-| Categorical     | Continuous      |
-|-----------------|-----------------|
-| K²              | t-test or ANOVA |
-| log. regression | correlation     |
+### tables
+
+- relations of
+```
+                        categorical         |  continuous
+         categorical    chi-square          |  T-test or ANOVA
+         continuous     logistic-regression |  correlation
+```
