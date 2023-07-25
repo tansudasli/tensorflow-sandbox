@@ -8,8 +8,8 @@
 |                        | **Steps**                                                    |                                                                                                                                                                     |
 |------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
-|                        | outlier                                                      | 
-|                        | associations of                                              |                                                                                                                                                                     | 
+|                        | outliers                                                     | 
+|                        | relations of                                                 |                                                                                                                                                                     | 
 |                        | encoding & binning                                           |                                                                                                                                                                     | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization vs Standardization                                                                                                                                    |
 |                        | Feature Selection                                            |                                                                                                                                                                     |
@@ -26,3 +26,8 @@
 |                        | Clustering                                                   | tendency <br/>#k <br/> quality <br/>&nbsp; - V-measure, <br/>&nbsp; - Silhouette Score                                                                              |
 |                        |                                                              | purpose <br/>&nbsp; - for another model (check the improvement) <br/>&nbsp; - for itself (ground truth labeling)                                                    |
 
+
+| Categorical     | Continuous      |
+|-----------------|-----------------|
+| K²              | t-test or ANOVA |
+| log. regression | correlation     |
