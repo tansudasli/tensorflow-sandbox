@@ -30,8 +30,7 @@
 
 ### tables
 
-[^1]: kk
-- relations of
+[^1]: relations
 ```
                         categorical         |  continuous
          categorical    chi-square          |  T-test or ANOVA
