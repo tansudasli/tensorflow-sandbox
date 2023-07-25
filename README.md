@@ -10,7 +10,7 @@
 |------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
 |                        | outliers                                                     |                                                                                                                                                                     |
-|                        | relations of                                                 | _table-1_                                                                                                                                                           | 
+|                        | relations of                                                 | statistical tests <br/> (K², t-test or anova, correlation)                                                                                                          | 
 |                        | encoding & binning                                           |                                                                                                                                                                     | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization vs Standardization                                                                                                                                    |
 |                        | Feature Selection                                            |                                                                                                                                                                     |
@@ -30,7 +30,7 @@
 
 ### tables
 
-- **table-1** : relations of
+**relations of**
 ```
                         categorical         |  continuous
          categorical    chi-square          |  T-test or ANOVA
