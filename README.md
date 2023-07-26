@@ -15,7 +15,7 @@
 | **Preprocessing**      | Feature Scaling                                              | Normalization <br/> Standardization                                                                                                                                 |
 |                        | Feature Selection                                            |                                                                                                                                                                     |
 |                        | Feature Extraction                                           | PCA, SVD                                                                                                                                                            |
-| **Split**              |                                                              |                                                                                                                                                                     |
+| **Sampling** - Split   |                                                              |                                                                                                                                                                     |
 | **Model**              | Regression                                                   |                                                                                                                                                                     |     
 |                        | Classification                                               |                                                                                                                                                                     |    
 |                        | Clustering                                                   |                                                                                                                                                                     |     
@@ -37,7 +37,7 @@
          continuous     logistic-regression |  correlation
 ```
 
-## critical concepts
+## ML fundamental concepts
 
 - **over-fitting**</br>
 generally; more data, cross-validation, and reducing variables (future selection & extraction)
@@ -49,6 +49,9 @@ generally; more data, cross-validation, and reducing variables (future selection
  neural network, DL |   early stop, drop-out                   | normalize    |
          
 ```
+the methodology finding the sweet spot b/w the simple and complex models are, regularization, boosting and bagging==!
+
 - imbalanced data in classification (biased to )
 - gini & entropy in decision trees (how to split root node?)
 - standardization vs normalization
+- bias vs variance
