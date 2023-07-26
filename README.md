@@ -5,12 +5,11 @@
 
 ## general structure of ML pipeline
 
-
 |                        | **Steps**                                                    |                                                                                                                                                                     |
 |------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
 |                        | outliers                                                     |                                                                                                                                                                     |
-|                        | relations of                                                 | statistical tests <br/> (K², t-test or anova, correlation)                                                                                                          | 
+|                        | relations                                                    | statistical tests <br/> (K², t-test or anova, correlation)                                                                                                          | 
 |                        | encoding & binning                                           |                                                                                                                                                                     | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization <br/> Standardization                                                                                                                                 |
 | _dimension reduction_  | Feature Selection                                            |                                                                                                                                                                     |
@@ -30,8 +29,8 @@
 
 ### tables
 
-**relations of** (statistical tests)
-```
+**relations**
+```statistical tests
                         categorical         |  continuous
          categorical    chi-square          |  T-test or ANOVA
          continuous     logistic-regression |  correlation
