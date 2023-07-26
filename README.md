@@ -43,9 +43,11 @@
 generally; more data, cross-validation, and reducing variables (future selection & extraction)
 
 ```
-         regression |   L1 (lasso), L2 (rigde) Regularization 
-         trees      |   ensembling (bagging, boosting, RF)
- neural network, DL |   early stop, drop-out
+         regression |   L1 (lasso), L2 (rigde) Regularization  | standardize
+         trees      |   ensembling (bagging, boosting, RF)     | no-need
+ neural network, DL |   early stop, drop-out                   | normalize
          
 ```
 - imbalanced data in classification
+- gini & entropy in decision trees
+- standardization vs normalization
