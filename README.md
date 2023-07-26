@@ -49,7 +49,7 @@ generally; more data, cross-validation, and reducing variables (future selection
  neural network, DL |   early stop, drop-out                   | normalize    |
          
 ```
-the methodology finding the sweet spot b/w the simple and complex models are, regularization, boosting and bagging==!
+the methodology finding the sweet spot b/w the simple and complex models are, regularization, boosting and bagging ==!
 
 - imbalanced data in classification (biased to )
 - gini & entropy in decision trees (how to split root node?)
