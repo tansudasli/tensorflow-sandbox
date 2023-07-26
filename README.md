@@ -49,9 +49,17 @@ generally; more data, cross-validation, and reducing variables (future selection
  neural network, DL |   early stop, drop-out                   | normalize    |
          
 ```
-the methodology finding the sweet spot b/w the simple and complex models are, regularization, boosting and bagging ==!
+the methodology _finding the sweet spot_ b/w the simple and complex models are, regularization, boosting and bagging!
 
 - imbalanced data in classification (biased to )
 - gini & entropy in decision trees (how to split root node?)
-- standardization vs normalization
+- feature scaling (standardization vs normalization)
+```
+                                   scaling     
+       gradient calculations   |   mandotary  | linear r, logistic r., neural n., deep l.
+ distance based calculations   |    no-need   | tree, svm, enseble models, k-means ...
+ 
+             neurol networks   |  Normalization
+         linear, logistic r.   |  Standardization                  
+```
 - bias vs variance
