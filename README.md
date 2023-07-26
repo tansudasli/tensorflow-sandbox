@@ -30,7 +30,7 @@
 
 ### tables
 
-**relations of**
+**relations of** (statistical tests)
 ```
                         categorical         |  continuous
          categorical    chi-square          |  T-test or ANOVA
@@ -43,11 +43,12 @@
 generally; more data, cross-validation, and reducing variables (future selection & extraction)
 
 ```
-         regression |   L1 (lasso), L2 (rigde) Regularization  | standardize
-         trees      |   ensembling (bagging, boosting, RF)     | no-need
- neural network, DL |   early stop, drop-out                   | normalize
+                           overfitting                            scaling         
+         regression |   L1 (lasso), L2 (rigde) Regularization  | standardize  | 
+         trees      |   ensembling (bagging, boosting, RF)     | no-need      |
+ neural network, DL |   early stop, drop-out                   | normalize    |
          
 ```
-- imbalanced data in classification
-- gini & entropy in decision trees
+- imbalanced data in classification (biased to )
+- gini & entropy in decision trees (how to split root node?)
 - standardization vs normalization
