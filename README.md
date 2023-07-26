@@ -12,7 +12,7 @@
 |                        | outliers                                                     |                                                                                                                                                                     |
 |                        | relations of                                                 | statistical tests <br/> (K², t-test or anova, correlation)                                                                                                          | 
 |                        | encoding & binning                                           |                                                                                                                                                                     | 
-| **Preprocessing**      | Feature Scaling                                              | Normalization vs Standardization                                                                                                                                    |
+| **Preprocessing**      | Feature Scaling                                              | Normalization <br/> Standardization                                                                                                                                 |
 |                        | Feature Selection                                            |                                                                                                                                                                     |
 |                        | Feature Extraction                                           | PCA, SVD                                                                                                                                                            |
 | **Split**              |                                                              |                                                                                                                                                                     |
@@ -36,3 +36,16 @@
          categorical    chi-square          |  T-test or ANOVA
          continuous     logistic-regression |  correlation
 ```
+
+## critical concepts
+
+- **over-fitting**</br>
+generally; more data, cross-validation, and reducing variables (future selection & extraction)
+
+```
+         regression |   L1 (lasso), L2 (rigde) Regularization 
+         trees      |   ensembling (bagging, boosting, RF)
+ neural network, DL |   early stop, drop-out
+         
+```
+- imbalanced data in classification
