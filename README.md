@@ -39,13 +39,13 @@
 ## ML fundamental concepts
 
 - **over-fitting**</br>
-generally; more data, cross-validation, and reducing variables (future selection & extraction)
+generally; more data, cross-validation, and reducing variables (future selection & extraction) improves over-fitting.
 
 ```
-                           overfitting                            scaling         
-         regression |   L1 (lasso), L2 (rigde) Regularization  | standardize  | 
-         trees      |   ensembling (bagging, boosting, RF)     | no-need      |
- neural network, DL |   early stop, drop-out                   | normalize    |
+                           overfitting                            scaling         multi-collinearity
+         regression |   L1 (lasso), L2 (rigde) Regularization  | standardize  |  eliminate high correlated features or use Ridge(Lasso)Regression which penalties high correlation..
+         trees      |   ensembling (bagging, boosting, RF)     | no-need      |    n/a
+ neural network, DL |   early stop, drop-out                   | normalize    |    n/a
          
 ```
 the methodology _finding the sweet spot_ b/w the simple and complex models are, regularization, boosting and bagging!
@@ -58,7 +58,7 @@ the methodology _finding the sweet spot_ b/w the simple and complex models are, 
        gradient calculations   |   mandotary  | linear r, logistic r., neural n., deep l.
  distance based calculations   |    no-need   | tree, svm, enseble models, k-means ...
  
-             neurol networks   |  Normalization
-         linear, logistic r.   |  Standardization                  
+             neural networks   |  Normalization (min=0, max=1)
+         linear, logistic r.   |  Standardization (μ=0, σ=1)   
 ```
 - bias vs variance
