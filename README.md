@@ -10,10 +10,11 @@
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
 |                        | outliers                                                     |                                                                                                                                                                     |
 |                        | relations                                                    | statistical tests <br/> (K², t-test or anova, correlation)                                                                                                          | 
-|                        | encoding & binning                                           |                                                                                                                                                                     | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization <br/> Standardization                                                                                                                                 |
-| _dimension reduction_  | Feature Selection                                            |                                                                                                                                                                     |
-| _dimension reduction_  | Feature Extraction                                           | PCA, SVD                                                                                                                                                            |
+|                        | Feature Selection                                            |                                                                                                                                                                     |
+|                        | Feature Extraction                                           | PCA, SVD                                                                                                                                                            |
+|                        | Encoding - dummy                                             | Categorical features                                                                                                                                                | 
+|                        | Binning                                                      |                                                                                                                                                                     |
 | **Sampling** - Split   |                                                              |                                                                                                                                                                     |
 | **Model**              | Regression                                                   |                                                                                                                                                                     |     
 |                        | Classification                                               |                                                                                                                                                                     |    
@@ -54,11 +55,11 @@ the methodology _finding the sweet spot_ b/w the simple and complex models are, 
 - gini & entropy in decision trees (how to split root node?)
 - feature scaling (standardization vs normalization)
 ```
-                                   scaling     
-       gradient calculations   |   mandotary  | linear r, logistic r., neural n., deep l.
- distance based calculations   |    no-need   | tree, svm, enseble models, k-means ...
+                                 scaling     
+       gradient calculations  |   mandotary  | linear r, logistic r., neural n., deep l.
+ distance based calculations  |    no-need   | tree, enseble models, k-means ...
  
-             neural networks   |  Normalization (min=0, max=1)
-         linear, logistic r.   |  Standardization (μ=0, σ=1)   
+             neural networks  |  Normalization ()
+    linear, logistic r., svm  |  Standardization => standard_scaler(μ=0, σ=1) or minmax_scaler(min=0, max=1)   
 ```
 - bias vs variance
