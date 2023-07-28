@@ -8,13 +8,13 @@
 |                        | **Steps**                                                    |                                                                                                                                                                     |
 |------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
 | **EDA**                | understanding data <br/>missing, wrong, null, duplicates ... |                                                                                                                                                                     | 
-|                        | outliers                                                     |                                                                                                                                                                     |
+|                        | outliers                                                     | IRQ <br/> anomaly detection                                                                                                                                         |
 |                        | relations                                                    | statistical tests <br/> (K², t-test or anova, correlation)                                                                                                          | 
 | **Preprocessing**      | Feature Scaling                                              | Normalization <br/> Standardization                                                                                                                                 |
 |                        | Feature Selection                                            |                                                                                                                                                                     |
 |                        | Feature Extraction                                           | PCA, SVD                                                                                                                                                            |
-|                        | Encoding - dummy                                             | Categorical features                                                                                                                                                | 
-|                        | Discretization - binning                                     |                                                                                                                                                                     |
+|                        | Encoding - dummy categorical f.                              |                                                                                                                                                                     | 
+|                        | Discretization - binning continuous f.                       |                                                                                                                                                                     |
 | **Sampling** - Split   |                                                              |                                                                                                                                                                     |
 | **Model**              | Regression                                                   |                                                                                                                                                                     |     
 |                        | Classification                                               |                                                                                                                                                                     |    
@@ -59,7 +59,17 @@ the methodology _finding the sweet spot_ b/w the simple and complex models are, 
        gradient calculations  |   mandotary  | linear r, logistic r., neural n., deep l.
  distance based calculations  |    no-need   | tree, enseble models, k-means ...
  
-             neural networks  |  Normalization ()
+             neural networks  |  Normalization (changes distribution!)
     linear, logistic r., svm  |  Standardization => standard_scaler(μ=0, σ=1) or minmax_scaler(min=0, max=1)   
 ```
 - bias vs variance
+```
+      underfitting  ----------------------- overfitting
+      model has high bias      |    model has high variance
+```
+
+- sampling techniques 
+
+[//]: # (:todo)
+
+- 
