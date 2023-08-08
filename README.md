@@ -68,8 +68,26 @@ the methodology _finding the sweet spot_ b/w the simple and complex models are, 
       model has high bias      |    model has high variance
 ```
 
-- sampling techniques 
+- sampling  
+  - sampling is about **understanding the population characteristic**
+  - sampling is about **controlling randomness**
+  - repeating experiment (which is expensive) vs bootstrapping (resample the sample, and get a distribution, calculate some stats)
+  - cross validation is some like bootstrapping
+``` two critical concepts
+ sampling      |  from population    | or, splitting in ML
+```
 
-[//]: # (:todo)
+- fit vs transform<br>
+    - with test data, there is no fitting at transformer step! no new calculation!
+    - if, pipeline.fit(X_train,...) used, fit & transform applied for preprocessing step. for estimator, only fit applied!
+    - In pipeline.predict(X_test,...), transform and predict steps are applied
 
-- 
+```
+                                transformer  --------------------  model
+                              (preprocessing)                   (estimator)     
+  train                  |     fit (calculates params)     |    fit (trains the model)
+                               transform 
+  test (predict phase)   |     transform                   |    predict
+  
+  
+```
