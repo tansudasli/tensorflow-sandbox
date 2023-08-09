@@ -39,8 +39,8 @@
 
 ## ML fundamental concepts
 
-- **over-fitting**</br>
-generally; more data, cross-validation, and reducing variables (future selection & extraction) improves over-fitting.
+- **over-fitting**
+    - generally; more data, cross-validation, and reducing variables (future selection & extraction) improves over-fitting.
 
 ```
                            overfitting                            scaling         multi-collinearity
@@ -71,14 +71,27 @@ the methodology _finding the sweet spot_ b/w the simple and complex models are, 
 - sampling  
   - sampling is about **understanding the population characteristic**
   - sampling is about **controlling randomness**
+  - key points are bias, cost, time and representativeness
   - repeating experiment (which is expensive) vs bootstrapping (resample the sample, and get a distribution, calculate some stats)
   - cross validation is some like bootstrapping
   - / N-1 => sample ν is always smaller than the population ν. So to compensate the gap, divide N-1 not N! 
-``` two critical concepts
- sampling      |  from population    | or, splitting in ML
+```
+ sampling in two main areas  
+ 
+ population    | 
+ ML            | train-test split
 ```
 
-- fit vs transform<br>
+```
+techniques
+
+   random      |  
+   convinient  | easy picks   
+   clustering  | then, random picks   
+   strata      | then, random picks 
+```
+
+- fit vs transform
     - with test data, there is no fitting at transformer step! no new calculation!
     - if, pipeline.fit(X_train,...) used, fit & transform applied for preprocessing step. for estimator, only fit applied!
     - In pipeline.predict(X_test,...), transform and predict steps are applied
