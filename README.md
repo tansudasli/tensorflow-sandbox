@@ -53,14 +53,14 @@ the methodology _finding the sweet spot_ b/w the simple and complex models are, 
 
 - imbalanced data in classification (biased to )
 - gini & entropy in decision trees (how to split root node?)
-- feature scaling (standardization vs normalization)
+- feature scaling (standardization or normalization)
 ```
                                  scaling     
        gradient calculations  |   mandotary  | linear r, logistic r., neural n., deep l.
  distance based calculations  |    no-need   | tree, enseble models, k-means ...
  
-             neural networks  |  Normalization (changes distribution!)
-    linear, logistic r., svm  |  Standardization => standard_scaler(μ=0, σ=1) or minmax_scaler(min=0, max=1)   
+             neural networks  |  Normalization | changes distribution!
+    linear, logistic r., svm  |  Standardization => standard_scaler(μ=0, σ=1) or minmax_scaler(min=0, max=1)   | no distribution change
 ```
 - bias vs variance
 ```
