@@ -3,7 +3,7 @@
 - numpy
 - pandas
 - sklearn
-- tf
+- tf2
 
 ### General structure of an ML pipeline
 
